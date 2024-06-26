@@ -1,0 +1,25 @@
+const additem= async (Product)=>{
+        
+        dispatch(AddItem(Product));
+        //state.map(async (item)=>{
+        const dataDb=await getDocs(usercollectionsRef);
+        let filterData=dataDb.docs.map((doc)=>({...doc.data(),id:doc.id}));
+        filterData.map(async (fildata)=>{
+            if(Product.id===fildata.productid && fildata.userid===User[0][0].id){
+                console.log("jfkj")
+                const data=doc(db,"cart",fildata.id);
+                await updateDoc(data,{quantity:fildata.quantity+1});
+                return -1;
+            }
+            console.log("mc");
+            // else if(fildata.productid===Product.id){
+                
+            //     return false;
+            // }
+            // else{
+            //     directInsert(Product);
+
+            // }
+        })
+         
+   }

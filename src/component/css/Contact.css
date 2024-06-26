@@ -1,0 +1,78 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+*{
+    font-family: Franklin Gothic Book;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 600px;
+    
+    
+    
+
+}
+.form-container {
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    max-width: 600px;
+    margin:20px;
+    max-height: 550px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:rgb(210, 237, 245);
+    font-family: 'FontAwesome';
+    
+
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(205, 91%, 52%);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0466b7;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    input, textarea, button {
+        font-size: 14px;
+    }
+}
+h1{
+    color:rgb(130, 159, 185);
+    font-weight: 700;
+}

@@ -1,0 +1,38 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+*{
+    font-family: Franklin Gothic Book;
+}
+.form{
+    width:50%;
+    margin:50px 30px;
+    border:1px solid black;
+    border-radius:12px;
+}
+.header{
+    text-align: left;
+    margin:30px;
+}
+.mainfr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.mb-3 input{
+    background-color:rgb(210, 237, 245);
+    font-family: 'FontAwesome';
+}
+@media screen and (max-width: 552px) {
+    .img{
+        display: none;
+    }
+    .form{
+        width: 100%;
+        margin:10px 10px;
+        font-size: 14px;
+    }
+    .form h1,h2,h3,h4,div,p,input{
+        font-size: 12px;
+    }
+
+
+}
